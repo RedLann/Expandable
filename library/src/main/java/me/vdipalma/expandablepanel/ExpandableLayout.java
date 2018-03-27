@@ -13,12 +13,13 @@ import android.view.animation.Interpolator;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 
+import me.vdipalma.expandable.R;
 import me.vdipalma.expandablepanel.util.FastOutSlowInInterpolator;
 
-import static net.cachapa.expandablelayout.ExpandableLayout.State.COLLAPSED;
-import static net.cachapa.expandablelayout.ExpandableLayout.State.COLLAPSING;
-import static net.cachapa.expandablelayout.ExpandableLayout.State.EXPANDED;
-import static net.cachapa.expandablelayout.ExpandableLayout.State.EXPANDING;
+import static me.vdipalma.expandablepanel.ExpandableLayout.State.COLLAPSED;
+import static me.vdipalma.expandablepanel.ExpandableLayout.State.COLLAPSING;
+import static me.vdipalma.expandablepanel.ExpandableLayout.State.EXPANDED;
+import static me.vdipalma.expandablepanel.ExpandableLayout.State.EXPANDING;
 
 public class ExpandableLayout extends FrameLayout {
     public interface State {
@@ -55,11 +56,11 @@ public class ExpandableLayout extends FrameLayout {
         super(context, attrs);
 
         if (attrs != null) {
-            TypedArray a = getContext().obtainStyledAttributes(attrs, net.cachapa.expandablelayout.R.styleable.ExpandableLayout);
-            duration = a.getInt(net.cachapa.expandablelayout.R.styleable.ExpandableLayout_el_duration, DEFAULT_DURATION);
-            expansion = a.getBoolean(net.cachapa.expandablelayout.R.styleable.ExpandableLayout_el_expanded, false) ? 1 : 0;
-            orientation = a.getInt(net.cachapa.expandablelayout.R.styleable.ExpandableLayout_android_orientation, VERTICAL);
-            parallax = a.getFloat(net.cachapa.expandablelayout.R.styleable.ExpandableLayout_el_parallax, 1);
+            TypedArray a = getContext().obtainStyledAttributes(attrs, R.styleable.ExpandableLayout);
+            duration = a.getInt(R.styleable.ExpandableLayout_el_duration, DEFAULT_DURATION);
+            expansion = a.getBoolean(R.styleable.ExpandableLayout_el_expanded, false) ? 1 : 0;
+            orientation = a.getInt(R.styleable.ExpandableLayout_android_orientation, VERTICAL);
+            parallax = a.getFloat(R.styleable.ExpandableLayout_el_parallax, 1);
             a.recycle();
 
             state = expansion == 0 ? COLLAPSED : EXPANDED;

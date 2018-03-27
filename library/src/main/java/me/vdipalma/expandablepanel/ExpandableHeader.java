@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import me.vdipalma.expandable.R;
+
 /**
  * Created by enzo on 17/03/18.
  */
