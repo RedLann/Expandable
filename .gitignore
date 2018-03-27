@@ -1,1 +1,15 @@
 .idea
+.gradle
+/local.properties
+/.idea
+*.iml
+.DS_Store
+/build
+/captures
+keystore.properties
+GTV/**
+screenshot.zip
+screenshot/**
+dist/**
+*.lock
+testsOutput.txt
