@@ -4,6 +4,10 @@
 
 This project was initially forked from [HERE](https://github.com/cachapa/ExpandableLayout "HERE")
 
+### Demo
+
+<img src="https://raw.githubusercontent.com/RedLann/Expandable/master/images/demo.gif" width="408">
+
 ### Installation
 
 In project build.gradle
