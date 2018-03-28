@@ -47,8 +47,6 @@ In module build.gradle
     
                 <!-- CONTENT HERE -->
     
-                </me.vdipalma.gelo.ui.view.PortateRecyclerView>
-    
             </me.vdipalma.expandablepanel.ExpandableLayout>
 
 
