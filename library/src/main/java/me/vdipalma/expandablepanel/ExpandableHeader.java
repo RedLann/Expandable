@@ -85,12 +85,10 @@ public class ExpandableHeader extends RelativeLayout {
                         case ExpandableLayout.State.COLLAPSING:
                         case ExpandableLayout.State.COLLAPSED:
                             expansionIndicatorIcon.setSelected(false);
-                            Log.d("enzo", "onExpansionUpdate: "+expansionIndicatorIcon.isSelected());
                             break;
                         case ExpandableLayout.State.EXPANDING:
                         case ExpandableLayout.State.EXPANDED:
                             expansionIndicatorIcon.setSelected(true);
-                            Log.d("enzo", "onExpansionUpdate: "+expansionIndicatorIcon.isSelected());
                             break;
                     }
                 }
