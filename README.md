@@ -1,2 +1,3 @@
 # Expandable
-[![](https://jitpack.io/v/redlann/expandable.svg)](https://jitpack.io/#redlann/expandable)
+
+[![](https://jitpack.io/v/RedLann/Expandable.svg)](https://jitpack.io/#RedLann/Expandable)
